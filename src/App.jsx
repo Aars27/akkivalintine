@@ -1,32 +1,33 @@
-import React, { useState, useRef, useEffect } from "react";
 import Spline from "@splinetool/react-spline";
+import { useEffect, useRef, useState } from "react";
+import { BsVolumeMuteFill, BsVolumeUpFill } from "react-icons/bs";
 import Swal from "sweetalert2";
-import { BsVolumeUpFill, BsVolumeMuteFill } from "react-icons/bs";
 
+import WordMareque from './MarqueeProposal.jsx';
 import MouseStealing from './MouseStealer.jsx';
 import lovesvg from "./assets/All You Need Is Love SVG Cut File.svg";
-import Lovegif from "./assets/GifData/main_temp.gif";
-import heartGif from "./assets/GifData/happy.gif";
-import sadGif from "./assets/GifData/sad.gif";
-import WordMareque from './MarqueeProposal.jsx';
 import purposerose from './assets/GifData/RoseCute.gif';
-import swalbg from './assets/Lovingbg2_main.jpg';
 import loveu from './assets/GifData/cutieSwal4.gif';
+import heartGif from "./assets/GifData/happy.gif";
+import Lovegif from "./assets/GifData/main_temp.gif";
+import sadGif from "./assets/GifData/sad.gif";
+import swalbg from './assets/Lovingbg2_main.jpg';
 
 //! yes - Gifs Importing
-import yesgif0 from "./assets/GifData/Yes/lovecutie0.gif";
+import yesgif3 from "./assets/GifData/Yes/love1.gif";
 import yesgif1 from "./assets/GifData/Yes/love2.gif";
 import yesgif2 from "./assets/GifData/Yes/love3.gif";
-import yesgif3 from "./assets/GifData/Yes/love1.gif";
+import yesgif0 from "./assets/GifData/Yes/lovecutie0.gif";
 import yesgif4 from "./assets/GifData/Yes/lovecutie1.gif";
+import yesgif8 from "./assets/GifData/Yes/lovecutie3.gif";
+import yesgif11 from "./assets/GifData/Yes/lovecutie4.gif";
 import yesgif5 from "./assets/GifData/Yes/lovecutie5.gif";
+import yesgif10 from "./assets/GifData/Yes/lovecutie6.gif";
 import yesgif6 from "./assets/GifData/Yes/lovecutie7.gif";
 import yesgif7 from "./assets/GifData/Yes/lovecutie8.gif";
-import yesgif8 from "./assets/GifData/Yes/lovecutie3.gif";
 import yesgif9 from "./assets/GifData/Yes/lovecutie9.gif";
-import yesgif10 from "./assets/GifData/Yes/lovecutie6.gif";
-import yesgif11 from "./assets/GifData/Yes/lovecutie4.gif";
 //! no - Gifs Importing
+import nogif7 from "./assets/GifData/No/RejectNo.gif";
 import nogif0 from "./assets/GifData/No/breakRej0.gif";
 import nogif0_1 from "./assets/GifData/No/breakRej0_1.gif";
 import nogif1 from "./assets/GifData/No/breakRej1.gif";
@@ -35,20 +36,19 @@ import nogif3 from "./assets/GifData/No/breakRej3.gif";
 import nogif4 from "./assets/GifData/No/breakRej4.gif";
 import nogif5 from "./assets/GifData/No/breakRej5.gif";
 import nogif6 from "./assets/GifData/No/breakRej6.gif";
-import nogif7 from "./assets/GifData/No/RejectNo.gif";
 import nogif8 from "./assets/GifData/No/breakRej7.gif";
 
 //! yes - Music Importing
-import yesmusic1 from "./assets/AudioTracks/Love_LoveMeLikeYouDo.mp3";
 import yesmusic2 from "./assets/AudioTracks/Love_EDPerfect.mp3";
-import yesmusic3 from "./assets/AudioTracks/Love_Nadaaniyan.mp3";
 import yesmusic4 from "./assets/AudioTracks/Love_JoTumMereHo.mp3";
+import yesmusic1 from "./assets/AudioTracks/Love_LoveMeLikeYouDo.mp3";
+import yesmusic3 from "./assets/AudioTracks/Love_Nadaaniyan.mp3";
 //! no - Music Importing
-import nomusic1 from "./assets/AudioTracks/Rejection_WeDontTalkAnyMore.mp3";
-import nomusic2 from "./assets/AudioTracks/Rejection_LoseYouToLoveMe.mp3";
-import nomusic3 from "./assets/AudioTracks/Reject_withoutMe.mp3";
 import nomusic4 from "./assets/AudioTracks/Neutral_Base_IHateU.mp3";
 import nomusic5 from "./assets/AudioTracks/Reject1_TooGood.mp3";
+import nomusic3 from "./assets/AudioTracks/Reject_withoutMe.mp3";
+import nomusic2 from "./assets/AudioTracks/Rejection_LoseYouToLoveMe.mp3";
+import nomusic1 from "./assets/AudioTracks/Rejection_WeDontTalkAnyMore.mp3";
 
 const YesGifs = [yesgif0, yesgif1, yesgif2, yesgif3, yesgif4, yesgif5, yesgif6, yesgif7, yesgif8, yesgif9, yesgif10, yesgif11];
 const NoGifs = [nogif0, nogif0_1, nogif1, nogif2, nogif3, nogif4, nogif5, nogif6, nogif7, nogif8];
@@ -389,22 +389,22 @@ export default function Page() {
   );
 }
 
-const Footer = () => {
-  return (
-    <a
-      className="fixed bottom-2 right-2 backdrop-blur-md opacity-80 hover:opacity-95 border p-1 rounded border-rose-300"
-      href="https://github.com/addu"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Made with{" "}
-      <span role="img" aria-label="heart">
-        ❤️
-      </span>
-      {" "}by Aarsh
-    </a>
-  );
-};
+// const Footer = () => {
+//   return (
+//     <a
+//       className="fixed bottom-2 right-2 backdrop-blur-md opacity-80 hover:opacity-95 border p-1 rounded border-rose-300"
+//       href="https://github.com/addu"
+//       target="_blank"
+//       rel="noopener noreferrer"
+//     >
+//       Made with{" "}
+//       <span role="img" aria-label="heart">
+//         ❤️
+//       </span>
+//       {" "}by Aarsh
+//     </a>
+//   );
+// };
 
 
 
